@@ -47,4 +47,4 @@ if city_name:
         print('Status: ' + res[7])
 
     else:
-        print('Error in Search!!!!') # Display the error message
+        print('City you entered could not be found, try another city.') # Display the error message

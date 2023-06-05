@@ -37,7 +37,7 @@ def getweather(city):
 # Let's write the Application
 
 st.header('Weather App')
-st.markdown('https://openweathermap.org/api')
+st.markdown('Weather App project submission by Team Robogyan for Github copilot hackathon')
 
 col1, col2 = st.columns(2)
 

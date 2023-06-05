@@ -12,7 +12,7 @@ url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid={}'
 def getweather(city):
     try:
         result = requests.get(url.format(city, api_key))
-        result.raise_for_status()  # Raises an exception for non-2xx status codes
+        result.raise_for_status()  
         json = result.json()
         country = json['sys']['country']
         temp = json['main']['temp'] - 273.15
@@ -36,6 +36,7 @@ def getweather(city):
 
 
 print("WEATHER APP")
+print('Weather App project submission by Team Robogyan for Github copilot hackathon')
 city_name = input("Enter a city name: ")
 if city_name:
     res, json = getweather(city_name)

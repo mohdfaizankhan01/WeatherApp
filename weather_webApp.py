@@ -26,7 +26,7 @@ def getweather(city):
         res = [country, round(temp, 1), round(temp_feels, 1), humid, lon, lat, icon, des, ws]
         return res, json
     except requests.exceptions.HTTPError as errh:
-        return None, f"Error in Search!!!"
+        return None, f"City you entered could not be found, try another city."
     except requests.exceptions.ConnectionError as errc:
         return None, f"Connection Error: {errc}"
     except requests.exceptions.Timeout as errt:
